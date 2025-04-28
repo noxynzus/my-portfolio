@@ -1,20 +1,20 @@
-'use client';
-import CallToActionContent from "./pages/callToActionContent";
-import FeatureContent from "./pages/featureContent";
+"use client";
+import FavoritesTools from "./pages/favoritesToolsContent";
+import ProjectsContent from "./pages/projectsContent";
 import FooterContent from "./pages/footerContent";
 import HeaderBar from "./pages/headerBar";
 import HeroContent from "./pages/heroContent";
+import EducationAndWork from "./pages/educationAndWork";
 
 export default function Home() {
   return (
-    // <main className="flex w-full min-h-screen flex-col items-center justify-between">
-    <div className="container mx-auto p-4 sm:p-6 lg:p-8">
+    <div className="container mx-auto p-4 sm:p-6 lg:p-8 h-full">
       <HeaderBar />
       <HeroContent />
-      <FeatureContent />
-      <CallToActionContent />
+      <ProjectsContent />
+      <FavoritesTools />
+      <EducationAndWork />
       <FooterContent />
     </div>
-    // </main>
   );
 }

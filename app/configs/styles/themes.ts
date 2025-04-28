@@ -13,6 +13,7 @@ interface Colors {
   secondary: Color;
   accent: Color;
   background: Color;
+  background2: Color;
   text: Color;
   divider: Color;
 }
@@ -85,13 +86,14 @@ const colors: Colors = {
   secondary: "#00A6F4",
   accent: "#10B981",
   background: "#161614",
+  background2:"#2A2A2A",
   text: "#FFFFFF",
   divider: "#B3B3B3",
 };
 
 const fontFamily: FontFamily = {
-  sans: ["Inter", "sans-serif"],
-  heading: ["Poppins", "sans-serif"],
+  sans: ["mono"],
+  heading: ["mono"],
 };
 
 const spacing: Spacing = {

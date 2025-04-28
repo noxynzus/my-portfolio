@@ -50,11 +50,13 @@ export default function HeaderBar() {
         {/* Logo  */}
         <div className="flex flex-row gap-5 w-auto h-full items-center min-w-8 outline-gray-500 outline-opacity-30">
           <div className="rounded-full right-2 p-2 h-full w-[48px] items-center flex justify-center border-1 border-gray-500 border-opacity-30">
-            A
+            <h6 className="text-3xl font-bold bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x">
+              A
+            </h6>
           </div>
           <label
             htmlFor="logo"
-            className="text-3xl font-bold text-linear-to-t from-sky-500 to-indigo-500"
+            className="text-3xl font-bold bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x"
           >{`Atthawat Aui`}</label>
         </div>
 
@@ -86,7 +88,12 @@ export default function HeaderBar() {
       </nav>
 
       {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
-      <Dialog transition open={mobileOpen} onClose={() => setMobileOpen(false)} className="fixed inset-0 z-10 overflow-y-auto transition duration-300 ease-out data-closed:opacity-0">
+      <Dialog
+        transition
+        open={mobileOpen}
+        onClose={() => setMobileOpen(false)}
+        className="fixed inset-0 z-10 overflow-y-auto transition duration-300 ease-out data-closed:opacity-0"
+      >
         <DialogPanel>
           <div className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto max-w-xs p-2 sm:max-w-md">
             <div className="flex h-full flex-col bg-[#161614] p-6 shadow-xl opacity-90">
