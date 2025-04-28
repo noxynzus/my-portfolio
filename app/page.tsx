@@ -14,6 +14,8 @@ export default function Home() {
       <ProjectsContent />
       <FavoritesTools />
       <EducationAndWork />
+      {/* Divider */}
+      <div className="border-t border-2 border-[#00A6F4] w-full opacity-50 my-4"></div>
       <FooterContent />
     </div>
   );

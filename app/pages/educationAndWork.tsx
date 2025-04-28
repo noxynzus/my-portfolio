@@ -1,5 +1,6 @@
 import React from "react";
-import ExperienceCard from "../components/ExperienceCard";
+import WorkExperience from "../components/WorkExperience";
+import Education from "../components/Education";
 
 export default function EducationAndWork() {
   return (
@@ -12,11 +13,11 @@ export default function EducationAndWork() {
 
       <div className="flex flex-row justify-around item-center gap-5 mt-8 w-full">
         <div className="flex flex-col justify-center item-center gap-2 ">
-          <ExperienceCard title="Education" />
+          <Education />
         </div>
 
         <div className="flex flex-col justify-center item-center gap-2 ">
-          <ExperienceCard title="Work Experience" />
+          <WorkExperience title="Work Experience" />
         </div>
       </div>
     </section>
