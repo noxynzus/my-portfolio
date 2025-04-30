@@ -22,7 +22,7 @@ const experinceWork = [
 
 export default function ExperienceCard({}: Props) {
   return (
-    <div className="w-[500px] h-[550px] rounded-2xl border border-gray-500 p-5 flex flex-col justify-start items-center">
+    <div className="min-w-[350px]  h-[450px] max-h-[550px] rounded-2xl border border-gray-500 p-5 flex flex-col justify-start items-center z-10 bg-linear-to-b from-[#2A2A2A] to-[#161614]  bg-opacity-50 mx-auto">
       {/* Title */}
       <div className="flex flex-row w-full items-center justify-start gap-2">
         <div className="w-[60px] h-[60px] bg-linear-to-r from-[#2A2A2A] to-[#161614] items-center flex justify-center rounded-full">
@@ -44,7 +44,7 @@ export default function ExperienceCard({}: Props) {
           key={index}
           className="flex flex-col w-full items-center justify-center gap-2 py-4"
         >
-          <div className="flex flex-col w-full items-start gap-2">
+          <div className="flex flex-col w-full items-start text-start gap-2">
             <h2 className="text-md text-gray-400">{`${item.year} / ${item.location}`}</h2>
             <h2 className="text-xl font-bold">{item.company}</h2>
             <h2 className="text-lg text-gray-300">{item.position}</h2>
