@@ -1,5 +1,6 @@
 import React from "react";
 import ToolsCard from "../components/ToolsCard";
+import Image from "next/image";
 
 const tools = [
   {
@@ -47,6 +48,13 @@ const tools = [
 export default function FavoritesTools() {
   return (
     <section className="flex flex-col justify-center items-center text-center p-10 w-full">
+      <Image
+        src="/images/backgrounds/tools-bg-ef.svg"
+        alt="Hero Image"
+        width={1406}
+        height={436}
+        className="absolute z-0  items-center justify-center w-full h-full opacity-80"
+      />
       <div className="flex flex-col justify-center item-center gap-2">
         <h6 className="">{`My Favorite Tools`}</h6>
         <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x">{`Exploring the tools,`}</h2>

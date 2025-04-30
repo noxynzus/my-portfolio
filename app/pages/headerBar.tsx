@@ -7,6 +7,7 @@ export default function HeaderBar() {
 
   return (
     <header>
+      
       {/* Mobile Menu Button */}
       <div className="flex lg:hidden items-center justify-between">
         {/* Logo  */}
@@ -46,7 +47,7 @@ export default function HeaderBar() {
         </button>
       </div>
 
-      <nav className="hidden navbar lg:flex flex-row justify-between items-center  gap-2  border-1 border-gray-500 border-opacity-30  rounded-full  p-2">
+      <nav className=" hidden navbar lg:flex flex-row justify-between items-center  gap-2  border-1 border-gray-500 border-opacity-30  rounded-full  p-2">
         {/* Logo  */}
         <div className="flex flex-row gap-5 w-auto h-full items-center min-w-8 outline-gray-500 outline-opacity-30">
           <div className="rounded-full right-2 p-2 h-full w-[48px] items-center flex justify-center border-1 border-gray-500 border-opacity-30">
@@ -70,7 +71,7 @@ export default function HeaderBar() {
               <a href="#">About</a>
             </li>
             <li className="text-white">
-              <a href="#">Project</a>
+              <a href="/projects">Project</a>
             </li>
             <li className="text-white">
               <a href="#">Testimonial</a>
@@ -86,6 +87,8 @@ export default function HeaderBar() {
           </button> */}
         </div>
       </nav>
+
+      
 
       {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
       <Dialog

@@ -18,7 +18,7 @@ const experinceEducate = [
 
 export default function Education() {
   return (
-    <div className="w-[500px] h-[550px] rounded-2xl border border-gray-500 p-5 flex flex-col justify-start items-center">
+    <div className="w-[500px] h-[550px] rounded-2xl border border-gray-500 p-5 flex flex-col justify-start items-center bg-[#161614]  bg-opacity-10">
       {/* Title */}
       <div className="flex flex-row w-full items-center justify-start gap-2">
         <div className="w-[60px] h-[60px] bg-linear-to-r from-[#2A2A2A] to-[#161614] items-center flex justify-center rounded-full">

@@ -8,7 +8,7 @@ import EducationAndWork from "./pages/educationAndWork";
 
 export default function Home() {
   return (
-    <div className="container mx-auto p-4 sm:p-6 lg:p-8 h-full">
+    <div className="container mx-auto p-4 sm:p-6 lg:p-8 h-full ">
       <HeaderBar />
       <HeroContent />
       <ProjectsContent />
