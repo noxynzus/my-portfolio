@@ -34,15 +34,8 @@ export default function HeaderBar() {
   return (
     <header
       translate="yes"
-      className="sticky top-5 z-50 translate-y-3transition duration-300 ease-out data-closed:opacity-0 mx-8"
+      className="sticky top-5 z-[1000] translate-y-3transition duration-300 ease-out data-closed:opacity-0 mx-8"
     >
-      <div
-        className="absolute z-10 inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-        aria-hidden="true"
-      >
-        <div className="relative rounded-full left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] translate-x-1/2 bg-linear-to-tr from-blue-500 via-purple-500 to-pink-500 opacity-15 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
-      </div>
-
       {/* Desktop Menu */}
       <nav className=" hidden navbar lg:flex flex-row justify-between items-center  gap-2  border-1 border-gray-500 border-opacity-30  rounded-full  py-1 px-2 z-50 ">
         {!show && (
