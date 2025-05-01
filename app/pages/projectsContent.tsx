@@ -24,11 +24,14 @@ export default function ProjectsContent() {
 
         {/* Button */}
         <div className="flex flex-col sm:justify-end items-center sm:items-end w-full sm:w-1/2 gap-4">
-          <OutlineRoundLinearBtn onClick={() => { 
-            if(typeof window !== 'undefined'){
-              window.open("/pages/projects", "_blank");
-            }
-           }} text="View All Projects" />
+          <OutlineRoundLinearBtn
+            onClick={() => {
+              if (typeof window !== "undefined") {
+                window.open("/pages/projects","_self");
+              }
+            }}
+            text="View All Projects"
+          />
         </div>
       </motion.div>
 
