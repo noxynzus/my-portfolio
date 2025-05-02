@@ -5,7 +5,7 @@ import { NavigationPath } from "../configs/styles/system/NavigationConfig";
 
 export default function FooterContent() {
   return (
-    <footer id="contact" className="h-auto w-full flex flex-col justify-center items-center">
+    <footer id="contact" className="h-auto w-full flex flex-col justify-center items-center ">
       {/* Divider */}
       <div className="border-t border-2 border-[#00A6F4] w-full opacity-50 my-4"></div>
 

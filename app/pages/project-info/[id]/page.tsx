@@ -4,7 +4,7 @@ import CommingSoon from "../../commingsoon/commingSoon";
 export default function ProjectInformation() {
   const coming = true;
   return (
-    <div className="relative isolate px-6 pt-14 lg:px-8">
+    <div className="relative isolate px-6 pt-14 lg:px-8 z-50">
       <div
         className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
@@ -13,7 +13,7 @@ export default function ProjectInformation() {
       </div>
 
       {coming ? (
-        <div className="h-full w-full  flex flex-col justify-center items-center z-50">
+        <div className="h-full w-full  flex flex-col justify-center items-center ">
           <CommingSoon />
         </div>
       ) : (
