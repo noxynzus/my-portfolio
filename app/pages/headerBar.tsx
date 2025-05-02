@@ -34,7 +34,7 @@ export default function HeaderBar() {
   return (
     <header
       translate="yes"
-      className="sticky top-5 z-50 translate-y-3transition duration-300 ease-out data-closed:opacity-0 mx-8"
+      className="sticky top-5 z-[1000] translate-y-3transition duration-300 ease-out data-closed:opacity-0 mx-8"
     >
       {/* Desktop Menu */}
       <nav className=" hidden navbar lg:flex flex-row justify-between items-center  gap-2  border-1 border-gray-500 border-opacity-30  rounded-full  py-1 px-2 z-50 ">

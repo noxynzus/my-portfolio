@@ -12,6 +12,13 @@ export default function HeroContent() {
       id="about"
       className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-5 lg:py-20 justify-center items-center text-center text-white relative isolate "
     >
+      <div
+        className="absolute z-10 inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div className="relative rounded-full left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] translate-x-1/2 bg-linear-to-tr from-blue-500 via-purple-500 to-pink-500 opacity-15 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+      </div>
+
       {/* Left */}
       <motion.div
         ref={ref}
