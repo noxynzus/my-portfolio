@@ -180,6 +180,14 @@ export default function HeaderBar() {
           </div>
         </DialogPanel>
       </Dialog>
+      {curPath !== "/pages/contactme" && (
+        <div
+          className="absolute z-[5] inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          aria-hidden="true"
+        >
+          <div className="relative z-[5] rounded-full left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] translate-x-1/2 bg-linear-to-tr from-blue-500 via-purple-500 to-pink-500 opacity-15 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+        </div>
+      )}
     </header>
   );
 }

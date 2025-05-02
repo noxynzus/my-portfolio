@@ -5,10 +5,7 @@ import { NavigationPath } from "../configs/styles/system/NavigationConfig";
 
 export default function FooterContent() {
   return (
-    <footer
-      id="contact"
-      className="h-auto w-full flex flex-col justify-center items-center relative isolate z-[100]"
-    >
+    <footer id="contact" className="h-auto w-full flex flex-col justify-center items-center ">
       {/* Divider */}
       <div className="border-t border-2 border-[#00A6F4] w-full opacity-50 my-4"></div>
 
@@ -118,8 +115,6 @@ export default function FooterContent() {
           {`Copyright © 2023 Atthawat Aui. All rights reserved. Version beta 0.0.5`}
         </div>
       </div>
-
-      
     </footer>
   );
 }

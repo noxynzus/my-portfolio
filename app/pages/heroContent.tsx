@@ -66,35 +66,6 @@ export default function HeroContent() {
         />
       </motion.div>
 
-      {/* <AnimatePresence>
-        {openResume && (
-          <motion.div
-            className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={() => setOpenResume(false)}
-          >
-            <motion.div
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-              onClick={(e) => e.stopPropagation()} // ป้องกันการปิดเมื่อคลิกที่รูป
-              className=" p-4 w-full h-full m-auto"
-            >
-              <Image
-                src="/images/resume/last-resume.png"
-                alt="Logo Expanded"
-                width={800}
-                height={800}
-                className="rounded-xl shadow-2xl"
-              />
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence> */}
-
       {/* Right */}
       <motion.div
         ref={ref}
