@@ -8,7 +8,7 @@ export default function ProjectsContent() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <section className="flex flex-col justify-center items-center text-center py-20 px-4  text-white">
+    <section className="relative isolate z-10 flex flex-col justify-center items-center text-center py-20 px-4  text-white">
       <motion.div
         ref={ref}
         initial={{ opacity: 0 }}
@@ -19,7 +19,7 @@ export default function ProjectsContent() {
         {/* Title */}
         <div className="flex flex-col justify-center items-center sm:justify-start sm:items-start w-full sm:w-1/2 gap-4">
           <h6 className="">{`My Projects!`}</h6>
-          <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x">{`My Lasted Projects!`}</h2>
+          <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2 bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent animate-gradient-x">{`My Lasted Projects!`}</h2>
         </div>
 
         {/* Button */}
@@ -27,7 +27,7 @@ export default function ProjectsContent() {
           <OutlineRoundLinearBtn
             onClick={() => {
               if (typeof window !== "undefined") {
-                window.open("/pages/projects","_self");
+                window.open("/pages/projects", "_self");
               }
             }}
             text="View All Projects"
@@ -68,6 +68,8 @@ export default function ProjectsContent() {
           />
         </div>
       </motion.div>
+
+      {/* <div className=" absolute w-max top-0 left-0 z-50 mask-r-from-80% mask-b-from-80% mask-radial-from-70% mask-radial-to-85% bg-white"></div> */}
     </section>
   );
 }
