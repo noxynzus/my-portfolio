@@ -10,7 +10,7 @@ interface Props {
 
 export default function ProjectCard({ url, image, title, description }: Props) {
   return (
-    <div className="w-[380px] h-[400px] rounded-2xl border border-gray-500 p-5 flex flex-col justify-between items-center">
+    <div className="w-[380px] h-[400px] rounded-2xl border border-gray-500 p-5 flex flex-col justify-between items-center shadow-xl">
       <Image src={image} alt="Project Image" width={500} height={500}  className="rounded-xl w-full h-full object-cover"/>
 
       <div className="flex justify-center items-center w-full gap-2 mt-2">

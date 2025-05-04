@@ -16,8 +16,8 @@ export default function EducationAndWork() {
         className="flex flex-col justify-center item-center gap-2"
       >
         <h6 className="">{`Education & Work`}</h6>
-        <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x">{`My Academic and`}</h2>
-        <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2 bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x">{`Professional Journey.`}</h2>
+        <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2 bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent animate-gradient-x">{`My Academic and`}</h2>
+        <h2 className="text-lg md:text-xl lg:text-2xl font-semibold mb-2 bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent animate-gradient-x">{`Professional Journey.`}</h2>
       </motion.div>
 
       <motion.div

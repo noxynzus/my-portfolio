@@ -6,11 +6,11 @@ import EducationAndWork from "./pages/educationAndWork";
 
 export default function Home() {
   return (
-    <>
+    <div >
       <HeroContent />
       <ProjectsContent />
       <FavoritesTools />
       <EducationAndWork />
-    </>
+    </div>
   );
 }

@@ -46,13 +46,13 @@ export default function HeaderBar() {
         {/* Logo  */}
         <div className="flex flex-row gap-5 w-auto h-full items-center min-w-8 outline-gray-500 outline-opacity-30 z-40">
           <div className="rounded-full right-2 p-2 h-[48px] w-[48px] items-center flex justify-center border-1 border-gray-500 border-opacity-30 bg-linear-to-t from-[#161614] to-[#2A2A2A]">
-            <h6 className="text-3xl font-bold bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x">
+            <h6 className="text-3xl font-bold bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent animate-gradient-x">
               A
             </h6>
           </div>
           <label
             htmlFor="logo"
-            className="text-3xl font-bold bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent animate-gradient-x"
+            className="text-3xl font-bold bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent animate-gradient-x"
           >{`Atthawat Aui`}</label>
         </div>
 
@@ -87,13 +87,13 @@ export default function HeaderBar() {
         {/* Logo  */}
         <div className="flex flex-row gap-5 w-auto h-full items-center min-w-8 outline-gray-500 outline-opacity-30 z-40">
           <div className="rounded-full right-2 p-2 h-[48px] w-[48px] items-center flex justify-center border-1 border-gray-500 border-opacity-30 bg-linear-to-t from-[#161614] to-[#2A2A2A]">
-            <div className="bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
+            <div className="bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent">
               A
             </div>
           </div>
           <label
             htmlFor="logo"
-            className="text-3xl font-bold  bg-linear-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent"
+            className="text-3xl font-bold  bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent"
           >{`Atthawat Aui`}</label>
         </div>
 
@@ -180,14 +180,14 @@ export default function HeaderBar() {
           </div>
         </DialogPanel>
       </Dialog>
-      {curPath !== "/pages/contactme" && (
+      {/* {curPath !== "/pages/contactme" && (
         <div
           className="absolute z-[5] inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
           <div className="relative z-[5] rounded-full left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] translate-x-1/2 bg-linear-to-tr from-blue-500 via-purple-500 to-pink-500 opacity-15 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
         </div>
-      )}
+      )} */}
     </header>
   );
 }

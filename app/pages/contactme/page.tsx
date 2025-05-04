@@ -159,12 +159,12 @@ export default function ContactMe() {
   // const coming = true;
   return (
     <div className="relative isolate  flex flex-col items-center justify-center px-6 pt-14 lg:px-8">
-      <div
+      {/* <div
         className="absolute inset-x-0 -top-40 -z-50 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         aria-hidden="true"
       >
-        <div className="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
-      </div>
+        <div className="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#0070f3] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+      </div> */}
 
       <div className="flex flex-col lg:flex-row w-full justify-center items-center lg:justify-between p-4 lg:p-8 ">
         <motion.div
@@ -172,7 +172,7 @@ export default function ContactMe() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 1 }}
-          className="w-full max-w-lg flex flex-col items-center justify-center space-y-4 pb-5"
+          className="w-full max-w-lg flex flex-col items-center justify-center space-y-4 pb-5 "
         >
           <div className="text-lg lg:text-2xl font-bold">Contact Me</div>
 
@@ -187,7 +187,7 @@ export default function ContactMe() {
           transition={{ duration: 1 }}
           className="w-full max-w-lg"
         >
-          <Fieldset className="space-y-6 rounded-xl bg-black/50 p-6 sm:p-10">
+          <Fieldset className="space-y-6 rounded-xl bg-black/50 p-6 sm:p-10 shadow-2xl shadow-blue-400">
             <Legend className="text-2xl font-semibold text-white">
               Contact Form
             </Legend>
@@ -295,12 +295,12 @@ export default function ContactMe() {
         </motion.div>
       </div>
 
-      <div
-        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+      {/* <div
+        className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-45rem)]"
         aria-hidden="true"
       >
-        <div className="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
-      </div>
+        <div className="relative left-[calc(50%+3rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 bg-linear-to-tr from-[#0070f3] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"></div>
+      </div> */}
     </div>
   );
 }

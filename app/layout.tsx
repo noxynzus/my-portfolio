@@ -27,9 +27,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <title>Portfolio Atthawat Aui</title>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="รับงาน Freelance | Part-Time | Landing Page | ออกแบบหน้าเว็บ | ออกแบหน้าแอพพลิเคชั่น " />
       </head>
       <body
         className={`${geistMono.variable} ${geistSans.variable} font-mono bg-[#161614] `}
