@@ -2,6 +2,9 @@ import React from "react";
 import OutlineRoundLinearBtn from "../components/buttons/outline-round-linear-btn";
 import ProjectCard from "../components/ProjectCard";
 import { motion, useInView } from "framer-motion";
+// Projects Data
+import projectDataContext from "../context/myproject";
+import { ProjectData } from "../context/myproject";
 
 export default function ProjectsContent() {
   const ref = React.useRef(null);
@@ -43,33 +46,20 @@ export default function ProjectsContent() {
         transition={{ duration: 1 }}
         className="flex flex-wrap item-center mt-8 w-full "
       >
-        <div className="w-full  md:w-1/2 lg:w-1/3 p-4 flex justify-center">
-          <ProjectCard
-            url="/pages/project-info/1"
-            image="/images/backgrounds/finance-1024.png"
-            title="Financial Management"
-            description="Manage your financial transactions and budgeting."
-          />
-        </div>
-        <div className="w-full  md:w-1/2  lg:w-1/3 p-4 flex justify-center">
-          <ProjectCard
-            url="/pages/project-info/1"
-            image="/images/backgrounds/coffee-1024.png"
-            title="Coffee & Restaurant"
-            description="Manage order and inventory for a coffee shop and restaurant."
-          />
-        </div>
-        <div className="w-full  md:w-1/2 lg:w-1/3 p-4 flex justify-center">
-          <ProjectCard
-            url="/pages/project-info/1"
-            image="/images/backgrounds/sports-1024.png"
-            title="Sports Result"
-            description="Real-time sports results and statistics."
-          />
-        </div>
+        {projectDataContext.map((project: ProjectData, index: number) => (
+          <div
+            key={index}
+            className="w-full  md:w-1/2 lg:w-1/3 p-4 flex justify-center"
+          >
+            <ProjectCard
+              url={project.url}
+              image={project.primaryImg}
+              title={project.title}
+              description={project.description}
+            />
+          </div>
+        ))}
       </motion.div>
-
-      {/* <div className=" absolute w-max top-0 left-0 z-50 mask-r-from-80% mask-b-from-80% mask-radial-from-70% mask-radial-to-85% bg-white"></div> */}
     </section>
   );
 }
