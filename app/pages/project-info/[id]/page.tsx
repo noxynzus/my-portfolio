@@ -19,7 +19,7 @@ export default function ProjectInformation() {
     };
   }, []);
 
-  const params = useParams<{ tag: string; item: string }>();
+  const params = useParams<{ tag: string; item: string, id: string }>();
   const data = projectDataContext.find((item) => item.id === params.id);
   return (
     <div className="relative isolate px-6 pt-14 lg:px-8 z-50">
