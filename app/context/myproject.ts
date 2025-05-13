@@ -41,6 +41,38 @@ const projectDataContext: ProjectData[] = [
     },
     {
         id : 'pr-02',
+        title : 'Coffee & Restaurant Management ',
+        url:"/pages/project-info/pr-02",
+        description : 'Manage order and inventory for a coffee shop and restaurant.',
+        primaryImg : '/images/project/coffee-restaurant/summary.webp',
+        secoundaryImg : [
+            '/images/project/coffee-restaurant/summary.webp',
+            '/images/project/coffee-restaurant/Login.webp',
+            '/images/project/coffee-restaurant/Food.webp',
+            '/images/project/coffee-restaurant/Kitchen.webp',
+            '/images/project/coffee-restaurant/Table.webp',
+            '/images/project/coffee-restaurant/Reservation.webp',
+
+        ],
+        overview : 'This is my third project',
+        techStack : ['HTML5', 'CSS3', 'JavaScript', 'Bootstrap','PHP','Figma'],
+        keyfeatures : [
+            'Menu Management: Easily update food and beverage items, categories, images, and availability.',
+            'Table & Order Management: Assign orders to tables, manage order status, split bills, and handle dine-in/takeaway workflows.',
+            'Customer Insights: Track customer orders, history.',
+            'Multi-Role Access: Role-based login for admin, cashier, waiter, chef, and manager.'
+        ],
+        valuedeliverables : [
+            'Real-Time Order & Table Management',
+            'Full-stack Web Application with intuitive UI/UX design',
+            'Role-Based Access Control System',
+            'POS-Integrated Checkout Flow',
+            'Customer Order History Tracking',
+        ]
+      
+    },
+    {
+        id : 'pr-03',
         title : 'Financial Management',
         url:"/pages/project-info/1",
         description : 'Manage your financial transactions and budgeting.',
@@ -51,30 +83,6 @@ const projectDataContext: ProjectData[] = [
             '/images/projects/8.png',
         ],
         overview : 'This is my second project',
-        techStack : ['NextJs', 'React', 'TailwindCSS'],
-        keyfeatures : [
-            'Feature 1',
-            'Feature 2',
-            'Feature 3',
-        ],
-        valuedeliverables : [
-            'Deliverable 1',
-            'Deliverable 2',
-            'Deliverable 3',
-        ]
-    },
-    {
-        id : 'pr-03',
-        title : 'Coffee & Restaurant',
-        url:"/pages/project-info/1",
-        description : 'Manage order and inventory for a coffee shop and restaurant.',
-        primaryImg : '/images/backgrounds/coffee-1024.png',
-        secoundaryImg : [
-            '/images/projects/10.png',
-            '/images/projects/11.png',
-            '/images/projects/12.png',
-        ],
-        overview : 'This is my third project',
         techStack : ['NextJs', 'React', 'TailwindCSS'],
         keyfeatures : [
             'Feature 1',
