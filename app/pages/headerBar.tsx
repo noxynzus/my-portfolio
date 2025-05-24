@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import RoundedLinearBtn from "../components/buttons/rounded-linear-btn";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { NavigationPath } from "../configs/styles/system/NavigationConfig";
@@ -86,16 +85,19 @@ export default function HeaderBar() {
 
         {/* Logo  */}
         <div className="flex flex-row gap-5 w-auto h-full items-center min-w-8 outline-gray-500 outline-opacity-30 z-40">
+        <Link href="/" className="cursor-pointer">
           <div className="rounded-full right-2 p-2 h-[48px] w-[48px] items-center flex justify-center border-1 border-gray-500 border-opacity-30 bg-linear-to-t from-[#161614] to-[#2A2A2A]">
             <div className="bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent">
               A
             </div>
           </div>
+          </Link>
           <label
             htmlFor="logo"
             className="text-3xl font-bold  bg-linear-to-r from-[#0070f3]  to-[#00a6f4] bg-clip-text text-transparent"
           >{`Atthawat Aui`}</label>
         </div>
+        
 
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
@@ -128,7 +130,7 @@ export default function HeaderBar() {
         transition
         open={mobileOpen}
         onClose={() => setMobileOpen(false)}
-        className="fixed inset-0 z-50 overflow-y-auto transition duration-300 ease-out data-closed:opacity-0"
+        className="fixed inset-0 z-[100] h-full overflow-y-auto transition duration-300 ease-out data-closed:opacity-0"
       >
         <DialogPanel>
           <div className="fixed inset-y-0 left-0 z-50 w-full overflow-y-auto max-w-xs p-2 sm:max-w-md">
@@ -159,7 +161,7 @@ export default function HeaderBar() {
                 </button>
               </div>
 
-              <ul className="flex flex-1 flex-col gap-4 space-y-6 ">
+              <ul className="flex flex-1 flex-col gap-4 space-y-6 pt-10">
                 {NavigationPath.map((item, index) => (
                   <li key={index}>
                     <a
@@ -173,7 +175,8 @@ export default function HeaderBar() {
               </ul>
               <div className="mt-6 flex flex-shrink-0 gap-4 z-50 items-center w-full justify-center">
                 {/* Contact Me */}
-                <RoundedLinearBtn onClick={() => {}} style="w-full" />
+                {/* <RoundedLinearBtn onClick={() => {}} style="w-full" /> */}
+                  <LinkButtonLinear href="/pages/contactme" />
               </div>
               <div className="mt-6 flex flex-shrink-0 gap-4"></div>
             </div>
